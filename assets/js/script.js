@@ -2,7 +2,7 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const employees = ['Jaiden' , 'Jordan' , 'Stanley' , 'Jacqueline'] 
+let employees = ['Jaiden' , 'Jordan' , 'Stanley' , 'Jacqueline'] 
 const EmployeesAverageSalary = "$" + 40000 + "/yr"
 
 // const collectEmployees = (function()) {
@@ -23,6 +23,9 @@ if (employees){
 }else {
   console.log("No longer works for employer");
 }
+
+const randomEmployee = (employees[2])
+
 
 // // Select a random employee
 // const getRandomEmployee = function(employeesArray) {
