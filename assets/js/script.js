@@ -1,9 +1,42 @@
 // Get a reference to the #add-employees-btn element
-const addEmployeesBtn = document.querySelector('#add-employees-btn');
+// const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
+//step 1: add  a 
+
+
+//Mock data 
 // Collect employee data
-let employees = ['Jaiden' , 'Jordan' , 'Stanley' , 'Jacqueline'] 
-const EmployeesAverageSalary = "$" + 40000 + "/yr"
+//let employees = ['Jaiden' , 'Jordan' , 'Stanley' , 'Jacqueline'] 
+const employees = [{
+  firstName: 'Stanley',
+  lastName: 'Lewis',
+  salary: 100000
+   
+},
+{
+  firstName: 'Jaiden', 
+  lastName: 'Lewis', 
+  salary: 60000
+}, 
+{
+  firstName: 'Jordan', 
+  lastName: 'Lewis', 
+  salary: 80000 
+}
+
+]
+// const EmployeesAverageSalary = "$" + 70000 + "/yr"
+
+//Stanley Tradeark
+//INPUT > DOWORK > OUTPUT
+function addEmployee (firstName, lastName, salary) {
+   //DOWORK
+   return "Employee added";
+
+}
+
+
+console.log(addEmployee());
 
 // const collectEmployees = (function()) {
 //   // TODO: Get user input to create and return an array of employee objects
@@ -14,17 +47,13 @@ const EmployeesAverageSalary = "$" + 40000 + "/yr"
 //   // TODO: Calculate and display the average salary
 // }
 
+// if (employees){
+//   console.log("Current empolyees of Warner Media");
+// }else {
+//   console.log("No longer works for employer");
+// }
 
-console.log(employees) ;
-console.log(EmployeesAverageSalary) ;
-
-if (employees){
-  console.log("Current empolyees of Warner Media");
-}else {
-  console.log("No longer works for employer");
-}
-
-const randomEmployee = (employees[2])
+// const randomEmployee = ("e"employees[2])
 
 
 // // Select a random employee
