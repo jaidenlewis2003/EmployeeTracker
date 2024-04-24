@@ -17,6 +17,10 @@ body {
   background-color: #f9fbfd;
 }
 
+.person {
+  color: red;
+}
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -114,6 +118,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
+
 
 
 @media (max-width: 690px) {

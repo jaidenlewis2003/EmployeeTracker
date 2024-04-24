@@ -1,7 +1,10 @@
 // Get a reference to the #add-employees-btn element
 // const addEmployeesBtn = document.querySelector('#add-employees-btn');
+const btnAddEmployee = document.getElementById("add-employees-btn")
+const employeeTable = document.getElementById("employee-table")
 
-//step 1: add  a 
+//step 1: add  a event to your button
+
 
 
 //Mock data 
@@ -31,12 +34,29 @@ const employees = [{
 //INPUT > DOWORK > OUTPUT
 function addEmployee (firstName, lastName, salary) {
    //DOWORK
+   employees.push({
+    firstName,
+    lastName,
+    salary
+   })
    return "Employee added";
 
 }
 
+function addEmployeeToDisplay (employee) {
+  employeeTable.innerHTML += `
+<tr>
+    <td>${employee.firstName}</td>
+    <td>${employee.lastName}</td>
+    <td>${employee.salary}</td>
+</tr>
 
-console.log(addEmployee());
+`
+}
+
+// btnAddEmployee.addEventListener("click",() => {
+//   console.log(`Add employee button was clicked`)
+// })
 
 // const collectEmployees = (function()) {
 //   // TODO: Get user input to create and return an array of employee objects
