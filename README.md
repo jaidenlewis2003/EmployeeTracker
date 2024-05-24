@@ -1,4 +1,5 @@
 # 03 JavaScript: Employee Payroll Tracker
+//ID, Elements, Class
 
 ## Your Task
 

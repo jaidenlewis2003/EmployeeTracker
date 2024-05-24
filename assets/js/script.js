@@ -10,24 +10,36 @@ const employeeTable = document.getElementById("employee-table")
 //Mock data 
 // Collect employee data
 //let employees = ['Jaiden' , 'Jordan' , 'Stanley' , 'Jacqueline'] 
-const employees = [{
+let employees = [{
   firstName: 'Stanley',
   lastName: 'Lewis',
+  currentlyEmployed: true,
+  employees.getFullName = funtion () {
+    console.log (employees)
+    return `${employees.firstName} ${employees.lastName}`
+  },
   salary: 100000
    
 },
 {
   firstName: 'Jaiden', 
   lastName: 'Lewis', 
+  currentlyEmployed: true,
   salary: 60000
 }, 
 {
   firstName: 'Jordan', 
   lastName: 'Lewis', 
+  currentlyEmployed: true,
   salary: 80000 
 }
 
-]
+
+];
+
+let topPerformingEmployee = employees.filter(x => x.salary === 100000)
+
+
 // const EmployeesAverageSalary = "$" + 70000 + "/yr"
 
 //Stanley Tradeark
@@ -42,6 +54,11 @@ function addEmployee (firstName, lastName, salary) {
    return "Employee added";
 
 }
+//function filterEmployee ()
+
+
+
+
 
 function addEmployeeToDisplay (employee) {
   employeeTable.innerHTML += `
@@ -52,7 +69,10 @@ function addEmployeeToDisplay (employee) {
 </tr>
 
 `
-}
+};
+
+
+
 
 // btnAddEmployee.addEventListener("click",() => {
 //   console.log(`Add employee button was clicked`)
