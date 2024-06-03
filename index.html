@@ -37,6 +37,18 @@
     </div>
   </div>
   <script src="./assets/js/script.js"></script>
+  <button onclick="searchbutton()">Search</button>
+  <script>
+    function searchbutton () {
+      let txt;
+      if (confirm("Prees the button!")) {
+        txt = "You pressed Ok"
+      } else {
+        txt = "You pressed Cancel";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
 </body>
 
 </html>

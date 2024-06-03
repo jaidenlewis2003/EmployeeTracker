@@ -10,14 +10,10 @@ const employeeTable = document.getElementById("employee-table")
 //Mock data 
 // Collect employee data
 //let employees = ['Jaiden' , 'Jordan' , 'Stanley' , 'Jacqueline'] 
-let employees = [{
+const employees = [{
   firstName: 'Stanley',
   lastName: 'Lewis',
   currentlyEmployed: true,
-  employees.getFullName = funtion () {
-    console.log (employees)
-    return `${employees.firstName} ${employees.lastName}`
-  },
   salary: 100000
    
 },
@@ -34,10 +30,13 @@ let employees = [{
   salary: 80000 
 }
 
-
 ];
 
-let topPerformingEmployee = employees.filter(x => x.salary === 100000)
+
+let topPerformingEmployee = employees.filter(x => x.salary === 100000 || x === x.salary === 80000 ) //Need to my make my 2nd condition to work
+
+
+//Create a prompt box 
 
 
 // const EmployeesAverageSalary = "$" + 70000 + "/yr"
