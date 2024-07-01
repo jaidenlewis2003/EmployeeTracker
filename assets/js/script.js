@@ -2,6 +2,7 @@
 // const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const btnAddEmployee = document.getElementById("add-employees-btn")
 const employeeTable = document.getElementById("employee-table")
+const elementNum = 0;
 
 //step 1: add  a event to your button
 
@@ -32,8 +33,14 @@ const employees = [{
 
 ];
 
+function topPerformer () {
+  employees.filter(x => x.salary === 60000)
+  return topPerformer;
+}
 
-let topPerformingEmployee = employees.filter(x => x.salary === 100000 || x === x.salary === 80000 ) //Need to my make my 2nd condition to work
+  
+
+//let topPerformingEmployee = employees.filter(x => x.salary === 100000 || x === x.salary === 80000 ) //Need to my make my 2nd condition to work
 
 
 //Create a prompt box 
@@ -53,9 +60,18 @@ function addEmployee (firstName, lastName, salary) {
    return "Employee added";
 
 }
-//function filterEmployee ()
 
+//promt up
 
+const generateEmployee = () => {
+  const userElement = window.prompt('What is your first name and last name')
+
+  elementNum++;
+
+  addElement(userElement, `Here is my element ${elementNum}`);
+
+}
+generateEmployee()
 
 
 
