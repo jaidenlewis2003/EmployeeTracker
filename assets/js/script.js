@@ -2,7 +2,7 @@
 // const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const btnAddEmployee = document.getElementById("add-employees-btn")
 const employeeTable = document.getElementById("employee-table")
-const elementNum = 0;
+const elementNum = 1;
 
 //step 1: add  a event to your button
 
@@ -64,14 +64,19 @@ function addEmployee (firstName, lastName, salary) {
 //promt up
 
 const generateEmployee = () => {
-  const userElement = window.prompt('What is your first name and last name')
+  const userElement = window.prompt('What is your first name and last name' , 'Enter name here')
 
   elementNum++;
 
   addElement(userElement, `Here is my element ${elementNum}`);
 
 }
+
 generateEmployee()
+
+const addElement = (firstName, lastName) => {
+  employeeTable.innerHTML += `<${firstName}>${lastName}`
+}
 
 
 
