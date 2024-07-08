@@ -91,7 +91,8 @@ function addEmployeeToDisplay (employee) {
 `
 };
 
-
+for(var i=0;i<employees.length;i++) {addEmployeeToDisplay(employees[i])}
+const getTopPerforms = () => employees.filter(x => x.salary >= 80000)
 
 
 // btnAddEmployee.addEventListener("click",() => {
